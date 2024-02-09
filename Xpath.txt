@@ -1,0 +1,40 @@
+Xpath
+-----
+
+Xpath by attribute
+------------------
+
+Syntax:      //tagname[@AN='AV']
+
+Example:     //a[@id='men']
+
+	     //a[@name="women"]
+
+Xpath by text function
+----------------------
+syntax :   //tagname[text()='Textvalue']
+example:   //h1[text()='TOP CATEGORIES TO CHOOSE FROM']
+
+Xpath by contains
+----------------
+syntax 1:   //tagname[contains(@AN,'AV')]
+syntax 2:   //tagname[contains(text(),'textvalue')]
+
+example : //h1[contains(text(),'TOP CATEGORIES ')]
+
+Xpath by group index
+--------------------
+syntax : (xpath)[index number]
+
+example  (//img[@alt="logo"])[1]
+
+
+Dynamic element
+----------------
+
+//DIV[DIV[DIV[SPAN[DIV[DIV[SPAN[.='Results']]]]]]]
+/descendant-or-self::DIV/DIV[3]/DIV/DIV/DIV/DIV/SPAN/DIV/DIV/DIV/DIV[2]/DIV/DIV/DIV[1]/H2/A/
+SPAN[@class='a-size-medium a-color-base a-text-normal']
+
+//DIV[DIV[DIV[SPAN[DIV[DIV[SPAN[.='Results']]]]]]]/descendant-or-self::DIV/DIV[4]/DIV/DIV/DIV/DIV/SPAN/DIV/DIV/DIV/DIV[2]/DIV/DIV/DIV[1]/H2/A/SPAN[@class='a-size-medium a-color-base a-text-normal']
+
